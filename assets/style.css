@@ -1,20 +1,21 @@
---light: #C1C7C9;
+/**--light: #C1C7C9;
 --cool: #8C979A;
 --dark: #555F61;
---bg: #131516;
+--bg: #131516;**/
 
 * {
-    margin:0;
-    padding:0;  
-  }
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
 
-  body {
-    position: relative;
+body {
+ /**   position: relative;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+    font-size: 14px;**/
     background-color: #fff;
-    color: #131516;
-  }
+  /**  color: #131516;**/
+}
   
   header {
     font-family: 'Courier New', Courier, monospace;
@@ -52,10 +53,10 @@
   }
 
   #landing-image {
-    height: 800px;
-    width: 100%;
+    height: px;
+    width: 300px;
     margin-bottom: 25px;
-    object-fit: cover;
+    object-fit: scale-down;
     object-position: center;
 }
 
