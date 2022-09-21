@@ -10,18 +10,34 @@
 
   body {
     position: relative;
-    font-family: "Courier New", serif;
+    font-family: 'Courier New', Courier, monospace;
     font-size: 14px;
-    background-color: #C1C7C9;
-    color: #F9FFD2;
+    background-color: #fff;
+    color: #131516;
   }
   
-  h1, h2 {
-    margin: 20px;
+  header {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #C1C7C9;
+    color: #131516
   }
 
-  main {
-    padding: 60px 0;
+  h1 {
+    display: inline-block;
+    font-size: 3em;
+    color: #131516;
+  }
+
+  nav{
+    padding-top: 20px;
+    margin-right: 20px;
+    float: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+  }
+
+  ul {
+    list-style-type: none;
   }
 
   li {
@@ -35,17 +51,14 @@
     color: #000;
   }
 
-  header,
+  main {
+    padding: 60px 0;
+  }
+
   footer {
     height: 50px;
     width: 100%;
     line-height: 50px;
-  }
-
-  header {
-    position: fixed;
-    border-bottom: 5px solid #F9FFD2;
-    background-color: #E5D2FF;
   }
 
   footer {
@@ -53,7 +66,7 @@
     margin-top: 0;
     bottom: 0;
     border-top: 5px solid #F9FFD2;
-    background-color: #E5D2FF;
+    background-color: #C1C7C9;
     color: #000;
   }
 
@@ -103,7 +116,7 @@
     margin: 10px;
     height: 40px;
     width: 120px;
-    background-color: #E5D2FF;
+    background-color: #C1C7C9;
     color: #000;
   }
 
