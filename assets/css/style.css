@@ -12,16 +12,16 @@
 body {
   padding: 0;
   margin: 0;
-  background-color: #fff;
-  font-family: 'Courier New', Courier, monospace;
-  color: #131516;
+  background-color: #F0F0F0;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: #474747;
 }
   
 header {
     padding: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    background-color: #C1C7C9;
-    color: #131516
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+    background-color: #fff;
 }
 
 h1 {
@@ -29,18 +29,16 @@ h1 {
     padding-left: 10px;
     padding-right: 10px;
     font-size: 3em;
-    color: #fff;
-    background-color: #131516;
-    border: 2px solid #131516;
+    color: #474747;
+    background-color: #fff;
     
 }
 
 h2 {
-  font-size: 36px;
+  font-size: 24px;
 }
 
 p {
-  font-size: 14px;
   color: #555F61;
 }
 
@@ -48,7 +46,7 @@ nav{
     padding-top: 20px;
     margin-right: 20px;
     float: right;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 20px;
 }
 
@@ -60,8 +58,15 @@ li {
     display: inline;
     padding: 0px 20px;
     text-decoration: none;
-    border: solid #131516;
-    background-color: #131516;
+    border: solid #474747;
+    background-color: #474747;
+    color: #fff;
+    opacity: 0.6;
+    transition: 0.3s;
+}
+
+li:hover {
+  opacity: 1;
 }
 
 a {
@@ -72,43 +77,66 @@ a {
 #landing-image {
     height: 150px;
     width: 100%;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     object-fit: cover;
     object-position: center;
 }
 
-  main {
-    width: 100%;
-    display: block;
-    align-content: center;
+main {
+  width: 100%;
+  display: block;
+  align-content: center;
 }
 
-  section {
-    padding-top: 65px;
-    padding-bottom: 65px;
+section {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 50px;
+  min-height: 150px; /**temp fix for top and bottom spacing to be even**/
+  border: 1px solid #fff;
+  background-color: #fff;
+}
 
+.section-left {
+  position: relative;
+  padding-right: 25px;
+  float: left;
+  width: 20%;
+  text-align: right;
+}
+
+.section-right {
+  position: relative;
+  padding-left: 25px;
+  padding-right: 25px;
+  float: right;
+  width: 80%;
+  text-align: left;
+  border-left: 3px solid #000;
   }
 
-  .section-left {
-    position: relative;
-    width: 30%;
-    padding-right: 25px;
-    text-align: right;
-    float: left;
-  }
+#my-portfolio {
+  display: flex; /** fixes overflow issue for flex container **/
+}
 
-  .section-right {
-    position: relative;
-    width: 70%;
-    padding-left: 25px;
-    padding-right: 25px;
-    text-align: left;
-    float: right;
-    border-left: 2px solid #000;
-  }
-
-.container {
+.flex-container {
   display: flex;
+  flex-wrap: wrap;
+  margin: 10px;
+  border: 1px dashed #000;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid #474747;
+}
+
+.item:hover {
+  width: 200px;
+  height: 200px;
 }
 
 footer {

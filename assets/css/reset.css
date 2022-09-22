@@ -1,4 +1,4 @@
-* {
+/*** {
     box-sizing: border-box;
 }
 html, body, div, img {
@@ -13,4 +13,4 @@ html, body, div, img {
 
 body {
     line-height: 1;
-}
+}**/
