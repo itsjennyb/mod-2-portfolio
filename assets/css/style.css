@@ -6,13 +6,15 @@
 * {
   box-sizing: border-box;
   margin:0;
-  padding:0;  
+  padding:0;
 }
 
 body {
-    background-color: #fff;
-    font-family: 'Courier New', Courier, monospace;
-    color: #131516;
+  padding: 0;
+  margin: 0;
+  background-color: #fff;
+  font-family: 'Courier New', Courier, monospace;
+  color: #131516;
 }
   
 header {
@@ -105,13 +107,18 @@ a {
     border-left: 2px solid #000;
   }
 
+.container {
+  display: flex;
+}
+
 footer {
     height: 50px;
     width: 100%;
     line-height: 50px;
     position: absolute;
-    margin-top: 0;
-    bottom: 0;
+    bottom: -700px; /**temp fix: footer misplaced after adding sample imgs**/
+    left: 0;
+    right: 0;
     text-align: center;
     background-color: #C1C7C9;
     color: #000;
