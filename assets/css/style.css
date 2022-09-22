@@ -4,126 +4,116 @@
 --bg: #131516;**/
 
 * {
-    margin:0;
-    padding:0;  
-  }
+  box-sizing: border-box;
+  margin:0;
+  padding:0;  
+}
 
-  body {
-    position: relative;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
+body {
     background-color: #fff;
+    font-family: 'Courier New', Courier, monospace;
     color: #131516;
-  }
+}
   
-  header {
+header {
+    padding: 20px;
     font-family: 'Courier New', Courier, monospace;
     background-color: #C1C7C9;
     color: #131516
-  }
+}
 
-  h1 {
+h1 {
     display: inline-block;
+    padding-left: 10px;
+    padding-right: 10px;
     font-size: 3em;
-    color: #131516;
-  }
+    color: #fff;
+    background-color: #131516;
+    border: 2px solid #131516;
+    
+}
 
-  nav{
+h2 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 14px;
+  color: #555F61;
+}
+
+nav{
     padding-top: 20px;
     margin-right: 20px;
     float: right;
     font-family: 'Courier New', Courier, monospace;
     font-size: 20px;
-  }
+}
 
-  ul {
+ul {
     list-style-type: none;
-  }
+}
 
-  li {
+li {
     display: inline;
     padding: 0px 20px;
     text-decoration: none;
+    border: solid #131516;
+    background-color: #131516;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
   }
 
-  a {
-    text-decoration: none;
-    color: #000;
-  }
+#landing-image {
+    height: 150px;
+    width: 100%;
+    margin-bottom: 25px;
+    object-fit: cover;
+    object-position: center;
+}
 
   main {
-    padding: 60px 0;
+    width: 100%;
+    display: block;
+    align-content: center;
+}
+
+  section {
+    padding-top: 65px;
+    padding-bottom: 65px;
+
   }
 
-  footer {
+  .section-left {
+    position: relative;
+    width: 30%;
+    padding-right: 25px;
+    text-align: right;
+    float: left;
+  }
+
+  .section-right {
+    position: relative;
+    width: 70%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: left;
+    float: right;
+    border-left: 2px solid #000;
+  }
+
+footer {
     height: 50px;
     width: 100%;
     line-height: 50px;
-  }
-
-  footer {
     position: absolute;
     margin-top: 0;
     bottom: 0;
-    border-top: 5px solid #F9FFD2;
-    background-color: #C1C7C9;
-    color: #000;
-  }
-
-  figure {
-    margin-bottom: 40px;
-  }
-
-  img {
-    display: block;
-    margin: 20px auto;
-    border: 5px dotted #E5D2FF;
-    border-radius: 10px;
-  }
-
-  section {
-    margin-bottom: 0;
-    padding: 20px 10px 40px 10px;
-    border-top: 3px solid;
-  }
-
-  form {
-    margin: 0 auto;
-    width: 500px;
-    padding: 10px;
-    border: 5px solid;
-    border-radius: 20px;
-  }
-
-  label {
-    display: inline-block;
-    width: 100px;
-  }
-
-  input,
-  textarea {
-    box-sizing: border-box;
-    width: 300px;
-    border: 1px solid;
-  }
-
-  textarea {
-    vertical-align: top;
-    height: 60px;
-  }
-
-  button {
-    margin: 10px;
-    height: 40px;
-    width: 120px;
-    background-color: #C1C7C9;
-    color: #000;
-  }
-
-  .text-center {
     text-align: center;
-  }
+    background-color: #C1C7C9;
+    color: #000;
+}
 
-  .text-right {
-    text-align: right;
-  }
