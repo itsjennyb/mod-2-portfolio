@@ -89,6 +89,7 @@ main {
 }
 
 section {
+  display: flex;
   position: relative;
   margin-bottom: 10px;
   padding: 50px;
@@ -114,10 +115,6 @@ section {
   text-align: left;
   border-left: 3px solid #000;
   }
-
-#my-portfolio {
-  display: flex; /** fixes overflow issue for flex container **/
-}
 
 .flex-container {
   display: flex;
@@ -152,3 +149,66 @@ footer {
     color: #000;
 }
 
+/* Desktop & larger 
+@media screen and (min-width: 992px) {
+
+} */
+
+/* Tablet/medium screens, but bigger than mobile/small screens*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: block;
+    margin: 2px;
+    font-size: 16px;
+  }
+}
+
+/* Small screens, small mobile/landscape mode screens */
+@media screen and (min-width: 577px) and (max-width: 767px) {
+  nav {
+    padding: 0;
+    margin: 0;
+  }
+
+  li {
+    display: block;
+    margin: 2px;
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
+
+/* Xsmall screens/mobile in portrait mode */
+@media screen and (max-width: 576px) {
+  header {
+    text-align: center;
+  }
+
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    width: 90%;
+    align-content: center;
+  }
+
+  li {
+    display: block;
+    margin: 2px;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+}
