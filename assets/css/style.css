@@ -70,7 +70,7 @@ a {
   }
 
 #landing-image {
-    height: 150px;
+    height: 200px;
     width: 100%;
     margin-bottom: 10px;
     object-fit: cover;
@@ -124,6 +124,8 @@ section {
   border-left: 3px solid #000;
 }
 
+
+
 .item {
   display: flex;
   width: 200px;
@@ -145,6 +147,21 @@ section {
   opacity: 1;
 }
 
+.flex-item-container {
+  position: relative;
+}
+
+.image-text {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #474747;
+  color: #ffffff;
+  font-size: 14px;
+  padding-left: 5px;
+  padding-right: 20px;
+}
+
 footer {
     height: 50px;
     width: 100%;
@@ -157,11 +174,6 @@ footer {
     background-color: #C1C7C9;
     color: #000;
 }
-
-/* Desktop & larger 
-@media screen and (min-width: 992px) {
-
-} */
 
 /* Tablet/medium screens, but bigger than mobile/small screens*/
 @media screen and (min-width: 768px) and (max-width: 991px) {
