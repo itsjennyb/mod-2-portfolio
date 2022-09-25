@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
+<!-- Used semantic markup throughout for accessibility -->
 <head>
   <meta charset="UTF-8">
+  <!-- Added viewport meta, assists with media queries -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Referenced css stylesheet -->
   <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+  <!-- Browser tab title -->
   <title>Jennifer Blacutt</title>
 </head>
 
+<!-- Body, header, navbar and navlinks-->
 <body>
     <header>
         <h1>Jennifer Blacutt</h1>
         <nav>
             <ul>
+                <!-- Used target html to open new browser for external links -->
                 <li> <a href="https://github.com/itsjennyb" target="_blank">My GitHub</a></li>
                 <li> <a href="#my-portfolio">My Portfolio</a></li>
                 <li> <a href="#contact-me">Contact Me</a></li>
@@ -20,12 +25,13 @@
         </nav>
     </header>
 
-
+    <!-- Landing img, also acts as divider from header and main content -->
     <img id="landing-image" src="./assets/images/oceanrocks.png"
         alt="Black and white photo of rocks by ocean." />
-
+    <!-- Main content with 3 sections: about me, portfolio, and contact -->
     <main>
         <section id="about-me">
+            <!-- Used div and classes within sections to create separate columns for left and right -->
             <div class="section-left">
                 <h2>About Me</h2>
             </div>
@@ -43,12 +49,17 @@
             <div class="section-left">
                 <h2>My Portfolio</h2>
             </div>
+            <!-- Created separate div class for flex container so it isn't restrained by section-right params -->
             <div class="section-right-flex">
+                <!-- Added extra div and class to wrap img in a container to insert image text -->
                 <div class="flex-item-container">
                     <a href="https://itsjennyb.github.io/prework-study-guide/" target="_blank">
+                        <!-- Added img id to first flex item to add separate styling from rest of flex items -->
                         <img class="item" id="first" src="./assets/images/study-guide-img.png" alt="Snapshot of prework study guide webpage.">
                     </a>
+                    <!-- Inserted div for image text -->
                     <div class="image-text">
+                        <!-- Used span tag to separate from p tag params -->
                         <span>Bootcamp Study Guide</span>
                     </div>
                 </div>
@@ -82,7 +93,7 @@
             </div>
         </section>
     </main>
-
+    <!-- Footer -->
     <footer>
         2022 © Jennifer Blacutt 
     </footer>
