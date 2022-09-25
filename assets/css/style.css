@@ -166,7 +166,7 @@ footer {
     width: 100%;
     line-height: 50px;
     position: absolute;
-    bottom: -700px; /**temp fix: footer misplaced after adding sample imgs**/
+    bottom: auto; /**temp fix: footer misplaced after adding sample imgs**/
     left: 0;
     right: 0;
     text-align: center;
