@@ -55,7 +55,6 @@ li {
     text-decoration: none;
     border: solid #474747;
     background-color: #474747;
-    color: #fff;
     opacity: 0.6;
     transition: 0.3s;
 }
@@ -65,9 +64,9 @@ li:hover {
 }
 
 a {
-    text-decoration: none;
-    color: #fff;
-  }
+  text-decoration: none;
+  color: #F0F0F0;
+}
 
 #landing-image {
     height: 200px;
@@ -206,6 +205,8 @@ footer {
     font-size: 20px;
   }
 }
+
+
 
 /* Xsmall screens/mobile in portrait mode */
 @media screen and (max-width: 576px) {
