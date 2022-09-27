@@ -20,7 +20,7 @@ Webpage preview:
 
 View deployed page here:
 
-[My Portfolio]()
+[My Portfolio](https://itsjennyb.github.io/Portfolio/)
 
 ## License
 
