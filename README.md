@@ -16,7 +16,7 @@ N/A
 
 Webpage preview:
 
-![My Portfolio](./assets/images/portfolio-preview.npg.png)
+![My Portfolio](./assets/images/portfolio-preview.png)
 
 View deployed page here:
 
